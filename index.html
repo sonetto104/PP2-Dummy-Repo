@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2ce459e778.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="header">
+        <div id="header-div">
+            <div class="interval-master-div">
+                <h1 class="interval-master-heading">Interval Master</h1>
+            </div>
+        </div>
+    </section>
+
+    <section id="game-section">
+        <div class="game-area-div">
+            <div class="difficulty-div">
+               <div class="challenge"><h2 class="difficulty-heading">Choose Challenge Level:</h2></div>
+                <div class="button-container">
+                    <div class="button-div"><button class="button">Easy</button></div>
+                    <div class="button-div"><button class="button">Difficult</button></div>
+                </div>
+            </div>
+            <div id="interval-button-div">
+                <button class="interval-button" id="quaver-button"><i class="fa-solid fa-music"></i></button>
+            </div>
+
+            <div class="input-div">
+                <div class="interval-quality-div label">
+                    <label for="interval-quality">Interval Quality</label>
+                </div>
+                <div class="interval-quality-div">
+                    <select name="interval-quality" class="button" id="interval-quality">
+                        <option value="major">Major</option>
+                        <option value="minor">Minor</option>
+                        <option value="perfect">Perfect</option>
+                        <option value="augmented">Augmented</option>
+                        <option value="diminished">Diminished</option>
+                    </select>
+                </div>
+              
+                <div class="interval-quality-div label">
+                    <label for="interval-number">Interval Number</label>
+                </div>
+                <div class="interval-quality-div">
+                    <select name="interval-number" class="button" id="interval-number">
+                        <option value="unison">Unison</option>
+                        <option value="2nd">2nd</option>
+                        <option value="3rd">3rd</option>
+                        <option value="4th">4th</option>
+                        <option value="5th">5th</option>
+                        <option value="6th">6th</option>
+                        <option value="7th">7th</option>
+                        <option value="octave">Octave</option>
+                    </select>
+                </div>
+            </div>
+            <div class="notes-button-div">
+                <div class="notes-button1">
+                    <button class="button">Play Notes Separately</button>
+                </div>
+                <div class="notes-button2">
+                    <button class="button">Play Notes Together</button>
+                </div>
+            </div>
+    
+            <div class="interval-quality-div submit-div">
+                <input type="submit" id="submit" class="button submit-button">
+            </div>
+            <div class="score-div">
+                <p class="score-incrementor">Your Score: <span id="score"> 0 </span></p>
+            </div>
+        </div>
+
+        <div class="notes">
+            <audio controls src=./assets/Notes/C4.mp3 id="C4" class="note-sounds" data-number="0"></audio>
+            <audio controls src=./assets/Notes/Db4.mp3 id="Db4" class="note-sounds" data-number="1"></audio>
+            <audio controls src=./assets/Notes/D4.mp3 id="D4" class="note-sounds" data-number="2"></audio>
+            <audio controls src=./assets/Notes/Eb4.mp3 id="Eb4" class="note-sounds" data-number="3"></audio>
+            <audio controls src=./assets/Notes/E4.mp3 id="E4" class="note-sounds" data-number="4"></audio>
+            <audio controls src=./assets/Notes/F4.mp3 id="F4" class="note-sounds" data-number="5"></audio>
+            <audio controls src=./assets/Notes/Gb4.mp3 id="Gb4" class="note-sounds" data-number="6"></audio>
+            <audio controls src=./assets/Notes/G4.mp3 id="G4" class="note-sounds" data-number="7"></audio>
+            <audio controls src=./assets/Notes/Ab4.mp3 id="Ab4" class="note-sounds" data-number="8"></audio>
+            <audio controls src=./assets/Notes/A4.mp3 id="A4" class="note-sounds" data-number="9"></audio>
+            <audio controls src=./assets/Notes/Bb4.mp3 id="Bb4" class="note-sounds" data-number="10"></audio>
+            <audio controls src=./assets/Notes/B4.mp3 id="B4"class="note-sounds" data-number="11"></audio>
+            <audio controls src="./assets/Notes/C5.mp3" id="C5" class="note-sounds" data-number="12"></audio>
+        </div>
+    </section>
+ 
+ <script src="./assets/JS/script.js"></script>   
+</body>
+</html>
